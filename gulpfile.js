@@ -9,7 +9,7 @@ var gulp = require('gulp'),
     plumber = require('gulp-plumber');
 
 var SASS_INCLUDE_PATHS = [
-    './node_modules/normalize-scss/sass/'
+    './node_modules/normalize-scss/styles/'
 ];
 
 function handleError(err) {
@@ -18,7 +18,7 @@ function handleError(err) {
 }
 
 gulp.task('styles', function () {
-    return gulp.src('./sass/main.scss')
+    return gulp.src('./styles/main.scss')
         .pipe(plumber({ errorHandler: handleError }))
         .pipe(sourcemaps.init())
         .pipe(scss({outputStyle: 'compressed', includePaths: SASS_INCLUDE_PATHS}))
@@ -37,7 +37,7 @@ gulp.task('js', function() {
 });
 
 gulp.task('watch', ['styles', 'js'], function () {
-    gulp.watch('./sass/**/*.scss', ['styles']);
+    gulp.watch('./styles/**/*.scss', ['styles']);
     gulp.watch('./source-js/**/*.js', ['js']);
 });
 

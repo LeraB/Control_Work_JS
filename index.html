@@ -11,14 +11,45 @@
 
 </header>
 <main>
+  <!--  <div id="countWraper">
+        <label>Enter col count:</label>
+        <input type="number" min="1" max="150" value="1" id="colCount">
+        <label>Enter row count:</label>
+        <input type="number" min="1" max="150" value="1" id="rowCount">
+        <input type="button" id="build" value="Build">
+    </div> -->
+    <div id="wraper">
+        <!-- Modal content -->
+        <div  id="myModal" class="modal modal-content">
+            <span class="close">&times;</span>
+            <div class="item colorItem">
+            <label>Color:</label>
+            <input type="text" id="color">
+            </div>
+            <div class="item sizeItem">
+            <label>Font size:</label>
+            <input type="number" min="2" max="50" id="fSize">
+            </div>
+            <div class="item bgItem">
+            <label>Background color:</label>
+            <input type="text" id="bgColor">
+            </div>
+            <input type="button" id="btnApply" value="Apply">
+        </div>
 
+<table id ="table">
+
+</table>
+    </div>
 </main>
 <footer>
-
 </footer>
 <script
         src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
+<script
+        src="source-js/main.js"
+      ></script>
 </body>
 </html>
