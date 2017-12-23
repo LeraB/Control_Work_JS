@@ -14,7 +14,10 @@ You need the following programs to be installed on your computer:
 Node.js
 
 Demo:
-To view click on the link: 
+To view click on the link: https://lerab.github.io/Control_Work_JS/
+
+How to use:
+If you want to change color or background or font size of cell, please, use double-click on the cell.
 
 Technologies Used:
 
